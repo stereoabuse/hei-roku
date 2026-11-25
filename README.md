@@ -30,7 +30,8 @@ The channel is not in the Roku store, so it is sideloaded through Developer Mode
 
 1. On the Roku remote press Home x3, Up x2, Right, Left, Right, Left, Right. Enable the installer,
    set a password, and note the IP address it shows.
-2. Build the package (see below), or use a prebuilt `hei-roku.zip`.
+2. Download `hei-roku.zip` from the [latest release](https://github.com/stereoabuse/hei-roku/releases/latest),
+   or build it yourself (see below).
 3. Open `http://<roku-ip>` in a browser, sign in as `rokudev` with your password, upload the zip
    and choose **Install**.
 
