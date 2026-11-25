@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene">
+  <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+  <script type="text/brightscript" uri="MainScene.brs" />
+  <children>
+    <Group id="stack" />
+    <Group id="toast" visible="false" translation="[360,950]">
+      <Rectangle width="1200" height="72" color="0x1E1E24F5" />
+      <Label id="toastLabel" width="1140" height="72" translation="[30,0]" horizAlign="center" vertAlign="center"
+        color="0xF2F0EAFF" font="font:SmallSystemFont" />
+    </Group>
+    <Timer id="toastTimer" repeat="false" />
+  </children>
+</component>

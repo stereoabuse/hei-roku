@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Base for everything on MainScene's stack. A screen asks the scene to do things by setting
+     "action"; the scene sets "closing" just before it removes a screen. -->
+<component name="Screen" extends="Group">
+  <interface>
+    <field id="action" type="assocarray" alwaysNotify="true" />
+    <field id="closing" type="boolean" value="false" />
+  </interface>
+</component>

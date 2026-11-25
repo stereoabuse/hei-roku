@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Home (source="home") or a category (source=<api path>). -->
+<component name="BrowseScreen" extends="Screen">
+  <interface>
+    <field id="source" type="string" onChange="onSource" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+  <script type="text/brightscript" uri="BrowseScreen.brs" />
+  <children>
+    <LayoutGroup id="nav" layoutDirection="horiz" translation="[96,52]" itemSpacings="[20,56,48]" />
+    <Label id="eyebrow" translation="[96,30]" color="0xF5C518FF" font="font:SmallestSystemFont" />
+    <Label id="heading" translation="[96,62]" width="1728" color="0xF2F0EAFF" font="font:LargeBoldSystemFont" />
+    <RowList id="rows" translation="[0,130]" itemComponentName="Card" numRows="3"
+      itemSize="[1920,400]" itemSpacing="[0,30]" rowItemSize="[[404,344]]" rowItemSpacing="[[28,0]]"
+      focusXOffset="[96]" rowLabelOffset="[[96,14]]" rowLabelColor="0xF2F0EAFF"
+      showRowLabel="[true]" showRowCounter="[false]"
+      rowFocusAnimationStyle="floatingFocus" vertFocusAnimationStyle="fixedFocus" />
+    <Label id="status" width="1520" height="1080" translation="[200,0]" horizAlign="center" vertAlign="center"
+      wrap="true" color="0xCFCCC4FF" font="font:MediumSystemFont" text="Loading..." />
+  </children>
+</component>

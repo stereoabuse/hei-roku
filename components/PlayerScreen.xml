@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Loads an episode, plays it with the stock Video node UI, saves progress, and chains "up next". -->
+<component name="PlayerScreen" extends="Screen">
+  <interface>
+    <field id="path" type="string" onChange="onPath" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+  <script type="text/brightscript" uri="PlayerScreen.brs" />
+  <children>
+    <Rectangle width="1920" height="1080" color="0x000000FF" />
+    <Video id="video" width="1920" height="1080" />
+    <Label id="status" width="1920" height="1080" horizAlign="center" vertAlign="center" color="0xCFCCC4FF"
+      font="font:MediumSystemFont" text="Loading..." />
+    <Group id="upnext" translation="[1064,760]" visible="false">
+      <Rectangle width="760" height="130" color="0x141418F0" />
+      <Label translation="[32,22]" width="696" color="0xF5C518FF" font="font:SmallestSystemFont"
+        text="UP NEXT IN 8S  |  BACK TO STOP" />
+      <Label id="upnextTitle" translation="[32,66]" width="696" color="0xF2F0EAFF" font="font:SmallSystemFont" />
+    </Group>
+    <Timer id="progTimer" repeat="true" duration="20" />
+    <Timer id="nextTimer" repeat="false" duration="8" />
+  </children>
+</component>

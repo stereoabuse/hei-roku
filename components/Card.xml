@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- RowList item: thumbnail with optional duration badge and progress bar, title, one meta line. -->
+<component name="Card" extends="Group">
+  <interface>
+    <field id="itemContent" type="node" onChange="onContent" />
+  </interface>
+  <script type="text/brightscript" uri="Card.brs" />
+  <children>
+    <Rectangle width="404" height="227" color="0x17171BFF" />
+    <Poster id="thumb" width="404" height="227" loadWidth="404" loadHeight="227" loadDisplayMode="scaleToZoom" />
+    <Group id="badge" translation="[284,183]" visible="false">
+      <Rectangle width="110" height="34" color="0x000000C8" />
+      <Label id="dur" width="110" height="34" horizAlign="center" vertAlign="center" color="0xF2F0EAFF"
+        font="font:SmallestSystemFont" />
+    </Group>
+    <Rectangle id="prog" width="0" height="6" translation="[0,221]" color="0xF5C518FF" />
+    <Label id="title" width="404" translation="[0,239]" wrap="true" maxLines="2" color="0xF2F0EAFF"
+      font="font:SmallestSystemFont" />
+    <Label id="meta" width="404" translation="[0,312]" color="0x9A978FFF" font="font:SmallestSystemFont" />
+  </children>
+</component>

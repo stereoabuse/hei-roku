@@ -1,0 +1,13 @@
+{
+  "name": "hei-roku",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial HEI Network channel for Roku",
+  "license": "MIT",
+  "scripts": {
+    "build": "bsc"
+  },
+  "devDependencies": {
+    "brighterscript": "^0.73.8"
+  }
+}

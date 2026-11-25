@@ -1,0 +1,7 @@
+{
+  "rootDir": ".",
+  "files": ["manifest", "source/**/*", "components/**/*", "images/**/*"],
+  "stagingDir": "out/.staging",
+  "outFile": "out/hei-roku.zip",
+  "retainStagingDir": false
+}

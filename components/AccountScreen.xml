@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="AccountScreen" extends="Screen">
+  <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+  <script type="text/brightscript" uri="AccountScreen.brs" />
+  <children>
+    <Label width="1920" translation="[0,380]" horizAlign="center" color="0xF2F0EAFF" font="font:LargeBoldSystemFont"
+      text="Account" />
+    <Label id="who" width="1920" translation="[0,460]" horizAlign="center" color="0xCFCCC4FF"
+      font="font:SmallSystemFont" text="Signed in" />
+    <Button id="signout" translation="[810,550]" minWidth="300" text="Sign out" showFocusFootprint="true" />
+  </children>
+</component>

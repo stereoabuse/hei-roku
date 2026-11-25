@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Activation-code sign-in: show a QR code and a short code, then poll until it is confirmed. -->
+<component name="LoginScreen" extends="Screen">
+  <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+  <script type="text/brightscript" uri="LoginScreen.brs" />
+  <children>
+    <Group id="panel" visible="false">
+      <Rectangle width="408" height="408" translation="[256,336]" color="0xFFFFFFFF" />
+      <Poster id="qr" width="380" height="380" translation="[270,350]" />
+      <Label translation="[774,336]" width="900" color="0xF2F0EAFF" font="font:LargeBoldSystemFont"
+        text="Sign in to HEI Network" />
+      <Label id="how" translation="[774,416]" width="900" wrap="true" color="0xCFCCC4FF" font="font:SmallSystemFont" />
+      <Label id="code" translation="[774,520]" width="900" color="0xF5C518FF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="120" />
+      </Label>
+    </Group>
+    <Label id="status" translation="[774,690]" width="900" wrap="true" color="0x9A978FFF"
+      font="font:SmallestSystemFont" text="Loading..." />
+    <Timer id="pollTimer" repeat="true" duration="3.5" />
+  </children>
+</component>
